@@ -3,11 +3,13 @@ from pyscript import display, document
 def add_member(e):
     document.getElementById("output1").innerHTML = ""
     #1
+    members = {'Alice', 'Bob', 'Charlie'}
     #2
-    input_member = document.getElementById("input1").value
+    input_first_name = document.getElementById("input1").value
+    input_last_name = document.getElementById("input2").value
 
     #assign the value to set variables
-    new_member_set ={input_member}  
+    new_member_set ={f"{input_last_name} {input_first_name}"}  
 
     #3
     all_members = members | new_member_set
